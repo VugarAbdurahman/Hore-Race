@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  background: lightblue;
+}
+
+.area {
+  padding: 20px 15px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.area .win-container {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+}
+.area .win-container h1 {
+  color: rgb(0, 4, 255);
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.area img {
+  width: 130px;
+  z-index: 100;
+  position: relative;
+}
+
+.area .finish {
+  opacity: 0.3;
+  position: absolute;
+  font-size: 13rem;
+  color: #fff;
+  font-family: sans-serif;
+  top: 0;
+  bottom: 0;
+  right: -160px;
+  letter-spacing: 10px;
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  z-index: 12;
+}
+
+.area #finish-line {
+  z-index: 12;
+  border-left: 6px dashed #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 120px;
+}
+.result {
+  background-color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 15px 0;
+}
+.controls {
+  text-align: center;
+  margin-top: 1rem;
+}
+.controls #btn {
+  padding: 0.7rem 2rem;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+}
